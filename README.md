@@ -1,3 +1,3 @@
-# Smarttec Admin-Version
+# Smarttec mit Login
 
-Nur der Admin kann Benutzer erstellen und verwalten.
+Diese Version enthält die neue Login-Funktion für Admins und Benutzer.
