@@ -1,0 +1,11 @@
+function login() {
+  const username = document.getElementById("username").value.trim();
+  const password = document.getElementById("password").value;
+
+  if (username === "Nadim" && password === "Midanmirzazada1984@@") {
+    // Erfolgreicher Login → zur App weiterleiten
+    window.location.href = "app.html";
+  } else {
+    alert("Falscher Benutzername oder Passwort.");
+  }
+}
