@@ -1,2 +1,1 @@
-// Platzhalter für Node.js Server
-console.log('Smarttec Backend aktiv');
+// Hier kommt die Logik für Admin + Benutzer-Login hin
