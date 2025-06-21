@@ -1,12 +1,20 @@
-function saveData() {
-    const fields = ["datum", "kasse", "verkauft", "gewinn", "ware", "eingezahlt", "rueckgabe", "lohn", "safet"];
-    const data = fields.map(id => document.getElementById(id).value);
-    const row = document.createElement("tr");
-    data.forEach(val => {
-        const td = document.createElement("td");
-        td.textContent = val;
-        row.appendChild(td);
-    });
-    document.getElementById("entries").appendChild(row);
-    fields.forEach(id => document.getElementById(id).value = "");
-}
+// Beispiel: Admin Login
+const login = () => {
+  const username = document.querySelector('input[type="text"]').value;
+  const password = document.querySelector('input[type="password"]').value;
+
+  // Nur Admin darf rein
+  if (username === "Nadim" && password === "Midanmirzazada1984@@") {
+    // Weiterleitung zur App-Seite
+    window.location.href = "app.html";
+  } else {
+    alert("Falscher Benutzername oder Passwort.");
+  }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.querySelector('button');
+  if (button) {
+    button.addEventListener("click", login);
+  }
+});
